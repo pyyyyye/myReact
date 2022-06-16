@@ -1,7 +1,16 @@
-import React from "react";
+import { useRouter } from "next/router";
 import Head from "next/head";
+import { useState } from "react";
 
 export default function Home() {
+  const [isNum, setIsNum] = useState(false);
+  const router = useRouter();
+  const onClickBtn = () => {
+    router.push(`/my_page`);
+  };
+  const onClickMenu = () => {
+    setIsNum(!isNum);
+  };
   return (
     <div>
       <Head>
@@ -11,6 +20,10 @@ export default function Home() {
       </Head>
       <main>
         <h1 className="text-2xl">테일윈드 테일윈드</h1>
+        <button onClick={onClickBtn}>마이페이지로이동</button>
+        <br />
+        <button onClick={onClickMenu}>메뉴버튼</button>
+        <div>{isNum}</div>
       </main>
     </div>
   );
