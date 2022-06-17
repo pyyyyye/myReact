@@ -23,7 +23,7 @@ export default function Home() {
         <button onClick={onClickBtn}>마이페이지로이동</button>
         <br />
         <button onClick={onClickMenu}>메뉴버튼</button>
-        <div>{isNum}</div>
+        <div>상태 : {isNum}</div>
       </main>
     </div>
   );
