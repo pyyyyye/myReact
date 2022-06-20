@@ -10,6 +10,7 @@ export default function Home() {
   };
   const onClickMenu = () => {
     setIsNum(!isNum);
+    console.log("버튼 클릭");
   };
   return (
     <div>
