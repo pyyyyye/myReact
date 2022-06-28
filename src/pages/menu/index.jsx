@@ -5,5 +5,5 @@ const a = tw.div`
 `;
 
 export default function ToggleMenu() {
-  return <div className="a">메뉴</div>;
+  return <div className="a">메뉴메뉴</div>;
 }
