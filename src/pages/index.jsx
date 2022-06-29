@@ -21,7 +21,12 @@ export default function Home() {
       </Head>
       <main>
         <h1 className="text-2xl">테일윈드 테일윈드</h1>
-        <button onClick={onClickBtn}>마이페이지로이동</button>
+        <button
+          className="p-10 border-black hover:bg-gray-200"
+          onClick={onClickBtn}
+        >
+          마이페이지로이동
+        </button>
         <br />
         <button onClick={onClickMenu}>메뉴버튼</button>
         <div>상태 : {isNum}</div>
